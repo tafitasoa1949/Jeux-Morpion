@@ -48,7 +48,7 @@ public class Frame  extends JFrame{
         estTourCroix = true;
         estFinPartie = false;
         //
-        estModeFacile = true;
+        estModeFacile = false;
         estModeNormale = false;
         setVisible(true);
     }
@@ -83,7 +83,7 @@ public class Frame  extends JFrame{
                     ReinitialiserJeu();
                 } else {
                     if (estModeFacile) {
-                    	alea_facile();
+                    	MouvementIA_Facile();
                     } else {
                     	deplacerIA();
                     }
